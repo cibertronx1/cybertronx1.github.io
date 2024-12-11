@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Gadgets y Accesorios Tecnológicos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .tech-gradient {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-900">Tech<span class="text-blue-500">Zone</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="home.html" class="text-gray-700 hover:text-blue-500">Inicio</a>
+                    <a href="#categorias" class="text-gray-700 hover:text-blue-500">Categorías</a>
+                    <a href="#ofertas" class="text-gray-700 hover:text-blue-500">Ofertas</a>
+                    <a href="#novedades" class="text-gray-700 hover:text-blue-500">Novedades</a>
+                    <a href="#soporte" class="text-gray-700 hover:text-blue-500">Soporte</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-700 hover:text-blue-500">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs absolute -mt-3 -ml-2">3</span>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r  rounded-lg from-purple-600 to-blue-600 text-white">
+        <div class="container mx-auto px-6 py-24">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">El Futuro en tus Manos</h1>
+                    <p class="text-xl mb-8">Descubre los últimos gadgets y accesorios tecnológicos del mercado</p>
+                    <div class="flex space-x-4">
+                        <button onclick="location.href='home.html'"class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
+                            Explore Collection
+                        </button>
+                        <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition">
+                            See Offers
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="C:\Users\Cybertronx1\Desktop\landing\images\2.png" alt="Últimos gadgets" class="rounded-lg shadow-2xl"/>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categorías Populares -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Categorías Populares</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full p-8 mb-4 mx-auto w-32 h-32 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-4xl text-blue-500"></i>
+                    </div>
+                    <h3 class="font-bold">Smartphones</h3>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full p-8 mb-4 mx-auto w-32 h-32 flex items-center justify-center">
+                        <i class="fas fa-headphones text-4xl text-blue-500"></i>
+                    </div>
+                    <h3 class="font-bold">Audio</h3>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full p-8 mb-4 mx-auto w-32 h-32 flex items-center justify-center">
+                        <i class="fas fa-laptop text-4xl text-blue-500"></i>
+                    </div>
+                    <h3 class="font-bold">Portátiles</h3>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full p-8 mb-4 mx-auto w-32 h-32 flex items-center justify-center">
+                        <i class="fas fa-gamepad text-4xl text-blue-500"></i>
+                    </div>
+                    <h3 class="font-bold">Gaming</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Productos Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Producto 1 -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/300/300" alt="Smartphone" class="w-full h-64 object-cover"/>
+                        <div class="absolute top-0 right-0 bg-blue-500 text-white px-3 py-1 m-2 rounded">
+                            Nuevo
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">iPhone 15 Pro</h3>
+                        <p class="text-gray-600 mb-4">256GB - Titanio Natural</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold">$1,199</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/300/300" alt="Auriculares" class="w-full h-64 object-cover"/>
+                        <div class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 m-2 rounded">
+                            -20%
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">AirPods Pro</h3>
+                        <p class="text-gray-600 mb-4">2ª Generación con USB-C</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold">$249</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="/api/placeholder/300/300" alt="Smartwatch" class="w-full h-64 object-cover"/>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Apple Watch Series 9</h3>
+                        <p class="text-gray-600 mb-4">GPS + Cellular 45mm</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold">$499</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="/api/placeholder/300/300" alt="Laptop" class="w-full h-64 object-cover"/>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">MacBook Air M2</h3>
+                        <p class="text-gray-600 mb-4">512GB SSD - 16GB RAM</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold">$1,499</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-truck text-2xl text-blue-500"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Envío Gratis</h3>
+                    <p class="text-gray-600">En compras mayores a $99</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-500"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Garantía</h3>
+                    <p class="text-gray-600">1 año en todos los productos</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-sync text-2xl text-blue-500"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Devoluciones</h3>
+                    <p class="text-gray-600">30 días de prueba</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-2xl text-blue-500"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Soporte 24/7</h3>
+                    <p class="text-gray-600">Atención personalizada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suscripción -->
+    <section class="tech-gradient py-16 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">¿Quieres recibir las últimas novedades?</h2>
+            <p class="mb-8">Suscríbete a nuestro newsletter y recibe ofertas exclusivas</p>
+            <div class="max-w-md mx-auto">
+                <div class="flex gap-4">
+                    <input type="email" placeholder="Tu email" class="flex-1 px-4 py-3 rounded-lg text-gray-900"/>
+                    <button class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600">
+                        Suscribirse
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">TechZone</h4>
+                    <p class="text-gray-400">Los últimos gadgets y accesorios tecnológicos a tu alcance.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Inicio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Productos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Ofertas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Soporte</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb

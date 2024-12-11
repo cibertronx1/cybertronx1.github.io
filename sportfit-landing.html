@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportFit</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+ <!-- Navbar -->
+ <nav class="bg-white shadow-lg fixed w-full z-50">
+  <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+          <div class="flex items-center">
+              <span class="text-2xl font-bold text-blue-900">Sport<span class="text-blue-500">Fit</span></span>
+          </div>
+          <div class="hidden md:flex space-x-8">
+              <a href="home.html" class="text-gray-700 hover:text-blue-500">Inicio</a>
+              <a href="#categorias" class="text-gray-700 hover:text-blue-500">Categorías</a>
+              <a href="#ofertas" class="text-gray-700 hover:text-blue-500">Ofertas</a>
+              <a href="#novedades" class="text-gray-700 hover:text-blue-500">Novedades</a>
+              <a href="#soporte" class="text-gray-700 hover:text-blue-500">Soporte</a>
+          </div>
+          <div class="flex items-center space-x-6">
+              <a href="#" class="text-gray-700 hover:text-blue-500">
+                  <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="text-gray-700 hover:text-blue-500">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs absolute -mt-3 -ml-2">3</span>
+              </a>
+              <a href="#" class="text-gray-700 hover:text-blue-500">
+                  <i class="fas fa-user"></i>
+              </a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="bg-gradient-to-r  rounded-lg from-purple-600 to-blue-600 text-white">
+  <div class="container mx-auto px-6 py-24">
+      <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+              <h1 class="text-4xl md:text-6xl font-bold mb-4">High quality sports equipment and fitness clothing</h1>
+              <div class="flex space-x-4">
+                  <button onclick="location.href='home.html'"class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
+                    Explore Collection
+                  </button>
+                  <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition">
+                    See Offers
+                  </button>
+              </div>
+          </div>
+          <div class="md:w-1/2">
+              <img src="C:\Users\Cybertronx1\Desktop\landing\images\3.jpg" alt="Últimos gadgets" class="rounded-lg shadow-2xl"/>
+          </div>
+      </div>
+  </div>
+</header>
+
+  <!-- Features Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">¿Por qué elegir SportFit?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <!-- Icono de Shopping Bag -->
+            <span class="text-blue-600 text-2xl">&#128722;</span>
+          </div>
+          <h3 class="font-semibold mb-2">Calidad Premium</h3>
+          <p class="text-gray-600">Productos seleccionados de las mejores marcas</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <!-- Icono de Heart -->
+            <span class="text-blue-600 text-2xl">&#10084;</span>
+          </div>
+          <h3 class="font-semibold mb-2">Garantía de Satisfacción</h3>
+          <p class="text-gray-600">30 días de prueba con devolución garantizada</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <!-- Icono de Dumbbell -->
+            <span class="text-blue-600 text-2xl">&#128170;</span>
+          </div>
+          <h3 class="font-semibold mb-2">Asesoramiento Experto</h3>
+          <p class="text-gray-600">Equipo especializado para guiar tu compra</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Productos Destacados</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Producto 1 -->
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+          <div class="flex items-center justify-between">
+            <div class="bg-blue-100 p-3 rounded-lg">
+              <span class="text-blue-600 text-2xl">&#128170;</span>
+            </div>
+            <span class="text-sm text-gray-500">Equipamiento</span>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold">Set de Pesas Premium</h3>
+          <p class="text-gray-600 mb-4">Juego completo de pesas ajustables con acabado profesional</p>
+          <div class="flex justify-between items-center">
+            <span class="text-xl font-bold text-blue-600">$299.99</span>
+            <a href="#" class="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50">Ver Detalles</a>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+          <div class="flex items-center justify-between">
+            <div class="bg-blue-100 p-3 rounded-lg">
+              <span class="text-blue-600 text-2xl">&#128085;</span>
+            </div>
+            <span class="text-sm text-gray-500">Ropa</span>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold">Leggings Pro-Fit</h3>
+          <p class="text-gray-600 mb-4">Leggings de alto rendimiento con tecnología de compresión</p>
+          <div class="flex justify-between items-center">
+            <span class="text-xl font-bold text-blue-600">$59.99</span>
+            <a href="#" class="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50">Ver Detalles</a>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+          <div class="flex items-center justify-between">
+            <div class="bg-blue-100 p-3 rounded-lg">
+              <span class="text-blue-600 text-2xl">&#128085;</span>
+            </div>
+            <span class="text-sm text-gray-500">Ropa</span>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold">Top Deportivo MaxSupport</h3>
+          <p class="text-gray-600 mb-4">Máximo soporte para entrenamientos de alta intensidad</p>
+          <div class="flex justify-between items-center">
+            <span class="text-xl font-bold text-blue-600">$45.99</span>
+            <a href="#" class="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-blue-600 text-white py-16 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">¿Listo para empezar?</h2>
+      <p class="text-xl mb-8">Únete a la comunidad SportFit y transforma tu rutina de ejercicios</p>
+      <a href="#" class="inline-flex items-center bg-white text-blue-600 hover:bg-gray-100 px-4 py-2 rounded">
+        Comprar Ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-bold mb-4">SportFit</h3>
+          <p class="text-gray-400">Tu tienda de confianza para equipamiento deportivo y ropa fitness de alta calidad.</p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Productos</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Equipamiento</li>
+            <li>Ropa Deportiva</li>
+            <li>Accesorios</li>
+            <li>Novedades</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Ayuda</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Envíos</li>
+            <li>Devoluciones</li>
+            <li>Contacto</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Síguenos</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 SportFit. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
